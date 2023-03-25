@@ -152,7 +152,6 @@ public class CardDeliveryNegativeTest {
 
     @Test
     void shouldNotAddDateUnderLimit() {
-        Configuration.holdBrowserOpen = true;
         open("http://localhost:9999");
         $("[data-test-id = 'city'] input ").sendKeys("Москва");
         String currentDate = generateDate(2, "dd.MM.yyyy");

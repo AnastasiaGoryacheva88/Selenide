@@ -36,7 +36,7 @@ public class CardDeliveryTest {
 
     @Test
     void shouldDoubleNameTest() {
-        Configuration.holdBrowserOpen = true;
+
         open("http://localhost:9999");
         $("[data-test-id = 'city'] input ").setValue("Майкоп");
         String currentDate = generateDate(3, "dd.MM.yyyy");
